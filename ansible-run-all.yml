@@ -3,10 +3,6 @@
   hosts: localhost
   tasks: 
     - 
-      command: "dcos marathon app add shipconsole.json"
-      name: "Deploy Mesos Application"
-      register: docker
-    - 
       command: "ant dist"
     - 
       command: "docker build --no-cache --tag bharadwajsnp/mckinsey-sp:latest ."
@@ -16,3 +12,7 @@
       command: "docker push bharadwajsnp/mckinsey-sp:latest"
     - 
       debug: var=docker.stdout
+    - 
+      command: "dcos marathon app add shipconsole.json"
+      name: "Deploy Mesos Application"
+      register: docker
