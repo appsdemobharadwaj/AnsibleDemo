@@ -19,7 +19,7 @@
   "maxLaunchDelaySeconds": 3600,
   "container": {
     "docker": {
-      "image": "bharadwajsnp/spconsole:latest",
+      "image": "bharadwajsnp/sc-dockerized:beta",
       "forcePullImage": false,
       "privileged": false,
       "portMappings": [
