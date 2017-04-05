@@ -5,7 +5,7 @@
     - 
       command: "ant dist"
     - 
-      command: "docker build --no-cache --tag bharadwajsnp/mckinsey-sp:latest ."
+      command: "docker build --no-cache --tag bharadwajsnp/spconsole:latest ."
     - 
       command: "docker login -u bharadwajsnp -p Webhosting123"
     - 
